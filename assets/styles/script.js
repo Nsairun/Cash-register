@@ -11,7 +11,7 @@ const btnSubmit = document.querySelector('.btn-submit')
 const btnCashSubmit = document.querySelector('.btn-submit-cash')
 const btnReset = document.querySelector('.btn-reset')
 
-const returnAmount = document.querySelector('.return-amount')
+// const returnAmount = document.querySelector('.return-amount')
 
 message.className = 'hidden'
 const notes = [10000, 5000, 2500, 1000, 500, 100, 50, 25]
@@ -38,7 +38,7 @@ function handleBillAmountSubmit (e) {
 }
 
 btnCashSubmit.addEventListener('click', handleCashSubmit)
-function handleCashSubmit(e) {
+function handleCashSubmit (e) {
   const cashAmountInput = cashAmount.value
   const billAmountValue = billAmount.value
 
