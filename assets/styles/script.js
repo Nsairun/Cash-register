@@ -20,7 +20,7 @@ billAmount.focus()
 
 btnSubmit.addEventListener('click', handleBillAmountSubmit)
 
-function handleBillAmountSubmit(e) {
+function handleBillAmountSubmit (e) {
   const billAmountValue = billAmount.value
 
   if (billAmountValue === '' || billAmountValue === null) {
@@ -103,7 +103,7 @@ function handleCashSubmit(e) {
 
 btnReset.addEventListener('click', reset)
 
-function reset(e) {
+function reset (e) {
   cashAmount.value = ''
   billAmount.value = ''
 
@@ -118,7 +118,7 @@ function reset(e) {
   billAmount.focus()
 }
 
-function displayErrorMessage(display, messageText, section) {
+function displayErrorMessage (display, messageText, section) {
   if (display) {
     message.classList.add('visible')
     message.classList.add('error-message')
@@ -136,7 +136,7 @@ function displayErrorMessage(display, messageText, section) {
   }
 }
 
-function changeDisplay(element, display) {
+function changeDisplay (element, display) {
   if (display) {
     element.classList.add('visible')
     element.classList.remove('hidden')
@@ -146,7 +146,7 @@ function changeDisplay(element, display) {
   }
 }
 
-function displaySuccessMessage(display, messageText, section) {
+function displaySuccessMessage (display, messageText, section) {
   if (display) {
     message.classList.add('visible')
     message.classList.add('success-message')
@@ -164,9 +164,9 @@ function displaySuccessMessage(display, messageText, section) {
   }
 }
 
-function calculateNumNotes(cash, bill) {
+function calculateNumNotes (cash, bill) {
   let change = cash - bill
-  let numNotes = []
+  const numNotes = []
   for (let i = 0; i < notes.length; i++) {
     if (change >= notes[i]) {
       numNotes[i] = parseInt(change / notes[i])
@@ -180,7 +180,7 @@ function calculateNumNotes(cash, bill) {
   console.log(numNotes)
 }
 
-function clearNumNotesDiv() {
+function clearNumNotesDiv () {
   for (let i = 0; i < numNotesDiv.length; i++) {
     numNotesDiv[i].innerHTML = ''
   }
