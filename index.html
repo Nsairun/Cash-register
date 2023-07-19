@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <title>Cash Register</title>
+  </head>
+  <body>
+    <div class="container-text-center">
+      <section class="cash-register-hero">
+        <h1 class="cash-register-hero-head">💰 Cash Register App</h1>
+        <p class="cash-register-hero-lead">
+          Enter the customer's bill to know how much to reimburse to the
+          customer in the input field below.
+        </p>
+      </section>
+      <main class="main">
+        <div class="main-input">
+          <section class="bill-amount-input">
+            <h3 class="section-head">
+              <label for="bill-amount">Bill Amount</label>
+            </h3>
+            <div class="bill-input">
+                <input
+              type="number"
+              name="bill-amount"
+              id="bill-amount"
+              class="bill-amount"
+            />
+            <button class="btn btn-submit">Submit</button>
+            </div>
+          </section>
+
+          <section class="cash-amount-input hidden">
+            <h3>
+              <label for="cash-amount">Cash Given</label>
+            </h3>
+            <div class="cash-holder">
+                <input type="number" name="cash-amount" id="cash-amount" />
+            <div class="cash-amount-btn">
+              <button class="btn btn-submit-cash">Submit</button>
+            </div>
+            </div>
+            <button class="btn btn-reset">Reset</button>
+          </section>
+        </div>
+        <section class="cash-return-output hidden">
+          <h3 class="section-head">Return Change</h3>
+          <p class="return-amount"></p>
+          <div class="grid-container">
+            <div class="top-role">
+                <div class="change-tobereimbursed">
+                    <div class="number">
+                      <div class="number num-notes ten-thousand"></div>
+                      <div class="number num-notes five-thousand"></div>
+                      <div class="number num-notes two-thousand"></div>
+                      <div class="number num-notes one-thousand"></div>
+                      <div class="number num-notes fiv-hundred"></div>
+                      <div class="number num-notes one-hundred"></div>
+                      <div class="number num-notes fifty"></div>
+                      <div class="number num-notes twenty-five"></div>
+                    </div>
+                    <div class="coins">
+                      <div class="note two-thousand">FCFA 10000</div>
+                      <div class="note five-hundred">FCFA 5000</div>
+                      <div class="note hundred">FCFA 2000</div>
+                      <div class="note twenty">FCFA 1000</div>
+                    </div>
+                    <div class="btm-role">
+                        <div class="note ten">FCFA 500</div>
+                        <div class="note five">FCFA 100</div>
+                        <div class="note one">FCFA 50</div>
+                        <div class="note one">FCFA 25</div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./assets/styles/script.js"></script>
+  </body>
+</html>
