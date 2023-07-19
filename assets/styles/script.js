@@ -14,7 +14,7 @@ const btnReset = document.querySelector('.btn-reset')
 // const returnAmount = document.querySelector('.return-amount')
 
 message.className = 'hidden'
-const notes = [10000, 5000, 2500, 1000, 500, 100, 50, 25]
+const notes = [10000, 5000, 2000, 1000, 500, 100, 50, 25]
 
 billAmount.focus()
 
@@ -89,7 +89,7 @@ function handleCashSubmit (e) {
       cash = parseInt(Math.round(cashAmountInput, 0))
       displaySuccessMessage(
         true,
-        `OPEN FCFA${cash - bill} to be returned`,
+        `OPEN FCFA ${cash - bill} to be returned`,
         sectionCashAmountInput
       )
       changeDisplay(sectionCashAmountInput, true)

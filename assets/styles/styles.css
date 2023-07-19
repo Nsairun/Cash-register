@@ -109,11 +109,11 @@ button {
   margin: auto;
 }
 
-.top-role {
+.btm-role {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  gap: 2rem;
 }
 
 .return-amount {
@@ -124,8 +124,22 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 2rem;
   padding: 10px;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coins {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 @media screen and (max-width: 700px) {
